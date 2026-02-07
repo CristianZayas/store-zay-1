@@ -101,9 +101,10 @@ http://localhost:3000
 ---
 
 ## 👨‍💻 Autor
+---
+**ING Cristian Zayas Arieta**
 
-**Cristian Zayas Arieta**
-**Angel lizama**
+**IT Director Angel lizama**
 
 ## OBLIGATORIO.
 
