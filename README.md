@@ -16,7 +16,7 @@ El proyecto implementa renderizado en servidor, tipado seguro con TypeScript y u
 
 ---
 
-## 🧠 Decisiones técnicas
+ ## 🧠 Decisiones técnicas
 
 - Se utilizaron **Server Components** para el fetch inicial de productos, reduciendo el JavaScript enviado al cliente y mejorando el rendimiento.
 - Implementación de una **capa de servicios** para desacoplar la lógica de acceso a datos de la interfaz.
@@ -25,19 +25,24 @@ El proyecto implementa renderizado en servidor, tipado seguro con TypeScript y u
 - Persistencia del carrito mediante **localStorage**, conservando el estado entre sesiones.
 - Implementación de **Skeleton Loaders** para mejorar la percepción de carga.
 - Uso de componentes de **Radix UI** para garantizar accesibilidad y reutilización de la interfaz.
+- Implementación de un flujo de autenticación, permitiendo gestionar el acceso de usuarios y proteger secciones de la aplicación.
+- Desarrollo de un módulo de gestión de usuarios (CRUD) siguiendo principios de separación de responsabilidades para facilitar futuras extensiones del sistema.
 
 ---
 
 ## ✨ Funcionalidades principales
 
-- Listado de productos en formato de cards  
-- Filtro por categoría  
-- Búsqueda en tiempo real  
-- Página de detalle dinámica  
-- Carrito de compras persistente  
-- Control de cantidades  
-- Diseño totalmente responsive  
-
+- Listado de productos en formato de cards.  
+- Filtro por categoría para facilitar la exploración del catálogo.  
+- Búsqueda en tiempo real por nombre de producto.  
+- Página de detalle dinámica con información completa del producto.  
+- Carrito de compras persistente entre sesiones mediante localStorage.  
+- Control de cantidades dentro del carrito de compras.  
+- Sistema de autenticación para el control de acceso a la aplicación.  
+- Protección de rutas para restringir el acceso a secciones privadas.  
+- Gestión de usuarios mediante operaciones CRUD (crear, editar, eliminar y consultar).  
+- Arquitectura modular orientada a la escalabilidad y mantenibilidad.  
+- Diseño totalmente responsive con enfoque Mobile First.  
 ---
 
 ## 🧱 Estructura del proyecto
@@ -69,25 +74,12 @@ La capa de servicios se divide en:
 
 Esta separación permite mantener una arquitectura más limpia y preparada para escalar.
 
----
-
-## 📱 Preview
-
-_(Opcional pero recomendado)_  
-Agregar capturas de:
-
-- Home  
-- Detalle del producto  
-- Vista mobile  
-- Carrito  
-
----
-
 ## 📦 Instalación y ejecución
 
 ```bash
 npm install
 npm run dev
+npm run build
 ````
 
 La aplicación estará disponible en:
@@ -110,33 +102,14 @@ http://localhost:3000
 
 ## 👨‍💻 Autor
 
-**Angel Lizama**
+**Cristian Zayas Arieta**
+**Angel lizama**
 
-```
+## OBLIGATORIO.
 
-### ✅ Corre:
+<img width="1429" height="740" alt="image" src="https://github.com/user-attachments/assets/07e4ab16-2851-4873-b214-f5cf46babccd" />
+<img width="1429" height="740" alt="image" src="https://github.com/user-attachments/assets/eae7f7c3-f56f-4ccf-a3fb-43f0f640000f" />
+<img width="1429" height="740" alt="image" src="https://github.com/user-attachments/assets/4b8d392e-8d0f-451a-9f42-e3d02ed0b7e7" />
 
-```
-
-npm run build
-
-```
-
-OBLIGATORIO.
-
----
-
-### ✅ Agrega 3–4 screenshots  
-(Sube MUCHO la percepción profesional.)
-
----
-
-### ✅ Revísalo una vez más mañana con mente fresca.
-
-Nada más.
-
-No sobrepulir.
-
----
 
 
