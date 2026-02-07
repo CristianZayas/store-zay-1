@@ -36,7 +36,7 @@ export function LoginForm() {
     try {
       const response = await userService.login(values);
       localStorage.setItem("token", response.token);
-      router.push("/profile"); // Redirect to a protected route
+      window.location.href = "/"; // Redirect and refresh to home
     } catch (err) {
       if (err instanceof ApiError) {
         setError(err.message);
