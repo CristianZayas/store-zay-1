@@ -7,10 +7,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/hooks/use-cart";
 import { ROUTES } from "@/constants/routes";
-import type { Product } from "@/schemas/product.schema";
+import type { IProduct } from "@/schemas/product.schema";
 
 interface ProductCardProps {
-  product: Product;
+  product: IProduct;
 }
 
 export function ProductCard({ product }: ProductCardProps) {

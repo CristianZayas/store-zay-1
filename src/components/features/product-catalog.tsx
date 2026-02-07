@@ -4,10 +4,10 @@ import { useState } from "react";
 import { CategoryFilter } from "./category-filter";
 import { ProductGrid } from "./product-grid";
 import { SearchBar } from "./search-bar";
-import type { Product } from "@/schemas/product.schema";
+import type { IProduct } from "@/schemas/product.schema";
 
 interface ProductCatalogProps {
-  initialProducts?: Product[];
+  initialProducts?: IProduct[];
   initialCategories?: string[];
 }
 

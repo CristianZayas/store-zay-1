@@ -4,7 +4,7 @@ import useSWR from "swr";
 import { toast } from "sonner";
 import { productService } from "@/services/product.service";
 import { ApiError } from "@/services/api";
-import type { Product } from "@/schemas/product.schema";
+import type { IProduct } from "@/schemas/product.schema";
 
 function handleSwrError(error: unknown) {
   const message =
@@ -14,7 +14,7 @@ function handleSwrError(error: unknown) {
   toast.error("Error", { description: message });
 }
 
-export function useProducts(category?: string, fallbackData?: Product[]) {
+export function useProducts(category?: string, fallbackData?: IProduct[]) {
   return useSWR(
     category ? `/products/category/${category}` : "/products",
     () =>

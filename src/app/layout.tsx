@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Space_Mono } from "next/font/google";
 import { Toaster } from "sonner";
 import { Header } from "@/components/layout/header";
+import { AuthProvider } from "@/context/auth-context";
 
 import "./globals.css";
 
@@ -31,8 +32,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${spaceMono.variable}`}>
       <body className="min-h-screen font-sans antialiased">
-        <Header />
-        <main>{children}</main>
+        <AuthProvider>
+          <Header />
+          <main>{children}</main>
+        </AuthProvider>
         <Toaster
           position="bottom-right"
           toastOptions={{

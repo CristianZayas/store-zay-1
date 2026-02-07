@@ -6,12 +6,12 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 import { ProductCard } from "./product-card";
 import { useProducts } from "@/hooks/use-products";
-import type { Product } from "@/schemas/product.schema";
+import type { IProduct } from "@/schemas/product.schema";
 
 interface ProductGridProps {
   category?: string;
   searchQuery?: string;
-  initialProducts?: Product[];
+  initialProducts?: IProduct[];
 }
 
 export function ProductGrid({

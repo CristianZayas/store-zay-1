@@ -2,9 +2,13 @@
 
 import { useCallback, useEffect } from "react";
 import useSWR from "swr";
+import { create } from "zustand";
 import { toast } from "sonner";
-import type { CartItem } from "@/schemas/cart.schema";
-import type { Product } from "@/schemas/product.schema";
+import type { IProduct } from "@/schemas/product.schema";
+
+interface CartItem extends IProduct {
+  quantity: number;
+}
 
 const CART_KEY = "cart";
 

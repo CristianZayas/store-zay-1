@@ -32,7 +32,7 @@ export function CategoryFilter({
       <Button
         variant={!selected ? "default" : "outline"}
         size="sm"
-        className={`rounded-full ${!selected ? "bg-primary text-primary-foreground" : "bg-transparent text-foreground hover:bg-secondary"}`}
+        className={`rounded-full ${!selected ? "bg-primary text-primary-foreground" : "bg-transparent text-foreground hover:bg-primary"}`}
         onClick={() => onSelect(undefined)}
       >
         All
@@ -42,7 +42,7 @@ export function CategoryFilter({
           key={category}
           variant={selected === category ? "default" : "outline"}
           size="sm"
-          className={`rounded-full capitalize ${selected === category ? "bg-primary text-primary-foreground" : "bg-transparent text-foreground hover:bg-secondary"}`}
+          className={`rounded-full capitalize ${selected === category ? "bg-primary text-primary-foreground" : "bg-transparent text-foreground hover:bg-primary"}`}
           onClick={() => onSelect(category)}
         >
           {category}
