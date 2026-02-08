@@ -1,8 +1,22 @@
-# Store Zay – E-commerce Demo
+# Store Zay – Scalable E-commerce Architecture with Authentication
 
-Aplicación e-commerce desarrollada con **Next.js 16 (App Router)** enfocada en rendimiento, escalabilidad y buenas prácticas de arquitectura frontend/fullstack.
+Aplicación e-commerce desarrollada con **Next.js (App Router)** – Server Components enfocada en rendimiento, escalabilidad y buenas prácticas de arquitectura frontend/fullstack.
 
 El proyecto implementa renderizado en servidor, tipado seguro con TypeScript y una interfaz moderna basada en un enfoque **mobile-first**, garantizando una experiencia consistente en distintos dispositivos.
+
+## 🎯 Objetivo del proyecto
+
+Construir una aplicación e-commerce extendida con autenticación y gestión de usuarios, demostrando una arquitectura escalable, separación de responsabilidades y control de acceso.
+
+## ⚠️ Nota técnica
+
+El módulo de autenticación y la gestión de usuarios consumen una API de pruebas, por lo que la información no es persistente.  
+La implementación tiene fines demostrativos para evidenciar la arquitectura, integración de servicios y control de acceso.
+
+<img width="1429" height="740" alt="image" src="https://github.com/user-attachments/assets/07e4ab16-2851-4873-b214-f5cf46babccd" />
+
+## 🌐 Demo en vivo
+https://spontaneous-unicorn-d953d4.netlify.app/
 
 ---
 
@@ -44,6 +58,16 @@ El proyecto implementa renderizado en servidor, tipado seguro con TypeScript y u
 - Arquitectura modular orientada a la escalabilidad y mantenibilidad.  
 - Diseño totalmente responsive con enfoque Mobile First.  
 ---
+
+## ⚡ Principios aplicados
+
+- Arquitectura modular  
+- Separación de responsabilidades  
+- Control de acceso  
+- Tipado estático  
+- Escalabilidad  
+- Validación de datos  
+
 
 ## 🧱 Estructura del proyecto
 
@@ -101,14 +125,10 @@ http://localhost:3000
 ---
 
 ## 👨‍💻 Autor
----
-**ING Cristian Zayas Arieta**
+Cristian Zayas Arieta  
+Frontend Developer
 
-**IT Director Angel lizama**
 
-## OBLIGATORIO.
-
-<img width="1429" height="740" alt="image" src="https://github.com/user-attachments/assets/07e4ab16-2851-4873-b214-f5cf46babccd" />
 <img width="1429" height="740" alt="image" src="https://github.com/user-attachments/assets/eae7f7c3-f56f-4ccf-a3fb-43f0f640000f" />
 <img width="1429" height="740" alt="image" src="https://github.com/user-attachments/assets/4b8d392e-8d0f-451a-9f42-e3d02ed0b7e7" />
 
